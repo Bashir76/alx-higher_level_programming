@@ -1,0 +1,2 @@
+$PYFILE
+PYFILE=main.py
