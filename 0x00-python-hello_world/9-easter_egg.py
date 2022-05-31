@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-imfort this
+import this
