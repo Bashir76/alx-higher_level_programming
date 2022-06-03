@@ -5,7 +5,7 @@ from add_0 import add
 def main():
     a = 1
     b = 2
-    c = add(1 + 2 = -1)
+    c = add(=> a -b)
     print("{} + {} = {}".format(a, b, c))
 
 if __name__ == "__main__":
