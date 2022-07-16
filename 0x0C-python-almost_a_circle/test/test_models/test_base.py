@@ -1,4 +1,3 @@
-alx-higher_level_programming/0x0C-python-almost_a_circle/tests/test_models/test_base.py
 #!/usr/bin/python3
 """Defines unittests for base.py.
 Unittest classes:
