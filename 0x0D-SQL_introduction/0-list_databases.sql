@@ -1,2 +1,2 @@
---Disply all DataBase of my  mysql server
+-- Lists all databases of my MySQL server
 SHOW DATABASES;
