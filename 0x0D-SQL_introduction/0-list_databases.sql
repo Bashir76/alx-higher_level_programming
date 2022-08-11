@@ -1,2 +1,2 @@
---print all the DataBase
+-- print all the DataBase
 SHOW DATABASES;
