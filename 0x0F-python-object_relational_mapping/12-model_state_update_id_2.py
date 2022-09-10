@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Script
+Script that changes the name of a State object from the database
+@:
 """
 from model_state import Base, State
 from sqlalchemy.orm import sessionmaker
