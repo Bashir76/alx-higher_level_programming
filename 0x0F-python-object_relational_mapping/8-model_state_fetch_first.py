@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-Script that lists all State objects that contain the 
-letter a
+A script that prints the first State object
+@author: Bashir Amirkano
 """
 from model_state import Base, State
 from sqlalchemy.orm import sessionmaker
