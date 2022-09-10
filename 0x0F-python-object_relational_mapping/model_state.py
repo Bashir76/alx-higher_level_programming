@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 """
-A python file that contains the class definition of a State and an instance 
-
-@:
+A file that contains the class definition of a State and an instance
+@author: Bashir Amirkano
 """
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
