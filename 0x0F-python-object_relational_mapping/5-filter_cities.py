@@ -2,10 +2,32 @@
 """
 python file that contains the class definition of a State and an instance Base = declarative_base()
 """
+import MySQLdb
 import sys
-from model_state import Base,State
 
-from sqlalchemy import (create_engine)
- if __name__ == "__main__":
-   engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.format(sys.argv[1], sys.argv[2], sys.argv[3], pool_pre_ping=true)
-   Base.metadata.create_all(engine)
+
+if __name__ == '__main__':
+    args = sys.argv
+    if len(args) != 5:
+        print("Usage: {} username password database_name".format(args[0]))
+        exit(1)
+    username = args[1]
+    password = args[2]
+    data = args[3]
+    state_name = args[4]
+    db = MySQLdb.connect(host='localhost', user=username,
+                         passwd=password, db=data, port=3306)
+    cur = db.cursor()
+    num_rows = cur.execute("SELECT cities.name FROM cities WHERE state_id =\
+                           (SELECT id FROM states WHERE name LIKE BINARY %s)\
+                           ORDER BY cities.id;", (state_name, ))
+    rows = cur.fetchall()
+    i = 1
+    for row in rows:
+        print(row[0], end='')
+        if i < num_rows:
+            print(end=', ')
+        i += 1
+    print()
+    cur.close()
+    db.close()
