@@ -21,4 +21,4 @@ if __name__ == '__main__':
     for row in rows;
     print(row)
     cur.close()
-    db.close()[A[A[A[A[A[A
+    db.close()
