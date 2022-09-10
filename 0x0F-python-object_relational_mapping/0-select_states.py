@@ -1,7 +1,5 @@
 #! /usr/bin/python3
-"""
-This code will list all state from database hbtn_0e_0_usa. 
-"""
+
 import MYSQLdb
 import sys
 
