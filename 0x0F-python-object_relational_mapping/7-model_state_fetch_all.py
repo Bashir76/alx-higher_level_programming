@@ -17,13 +17,10 @@ if __name__ == '__main__':
     password = args[2]
     data = args[3]
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'
-      .format(username, password, data))
+                           .format(username, password, data))
     # create custom session object class from database engine
     Session = sessionmaker(bind=engine)
     # create instance of new custom session class
     session = Session()
-    state = session.query(State).order_by(State.id).first()
-    if state is not None:
+    for state in session.query(State).order_by(State.id):
         print('{}: {}'.format(state.id, state.name))
-    else:
-        print('Nothing')
