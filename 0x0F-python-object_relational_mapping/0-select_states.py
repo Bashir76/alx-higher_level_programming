@@ -1,5 +1,4 @@
 #! /usr/bin/python3
-# -*- coding: utf-8 -*-
 """
 This code will list all state from database hbtn_0e_0_usa. 
 """
