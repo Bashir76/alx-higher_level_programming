@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Script that changes the name of a State object from the database hbtn_0e_6_usa.
+Script that adds the State object “Louisiana” to the database
 @:
 """
 from model_state import Base, State
@@ -18,11 +18,13 @@ if __name__ == '__main__':
     password = args[2]
     data = args[3]
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'
-      .format(username, password, data))
+                           .format(username, password, data))
     # create custom session object class from database engine
     Session = sessionmaker(bind=engine)
     # create instance of new custom session class
     session = Session()
-    new_state = session.query(State).filter(State.id == 2).one()
-    new_state.name = 'New Mexico'
+    new_state = State()
+    new_state.name = 'Louisiana'
+    session.add(new_state)
     session.commit()
+    print(new_state.id)
