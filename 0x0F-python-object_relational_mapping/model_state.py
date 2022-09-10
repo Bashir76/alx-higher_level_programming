@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Script that lists all State objects from the database hbtn_0e_6_usa
+Script that lists all State objects 
+from the database hbtn_0e_6_usa.
 """
 from model_state import Base, State
 from sqlalchemy.orm import sessionmaker
@@ -17,7 +18,7 @@ if __name__ == '__main__':
     password = args[2]
     data = args[3]
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'
-   .format(username, password, data))
+                                .format(username, password, data))
     # create custom session object class from database engine
     Session = sessionmaker(bind=engine)
     # create instance of new custom session class
