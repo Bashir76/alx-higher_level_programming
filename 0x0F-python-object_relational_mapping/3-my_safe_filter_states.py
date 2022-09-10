@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-   This scipt displays arguments all values in the states table of hbtn_0e_0_usa where name matches the argument.
+   This scipt displays arguments all values in the states table,
+   Of hbtn_0e_0_usa where name matches the argument.
 """
 import MySQLdb
 import sys
