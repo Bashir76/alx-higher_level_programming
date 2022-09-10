@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Script that deletes all State objects with a name containing the letter a from the database hbtn_0e_6_usa.
+Script that deletes all State objects with a name containing the letter a from the database
+@:
 """
 from model_state import Base, State
 from sqlalchemy.orm import sessionmaker
