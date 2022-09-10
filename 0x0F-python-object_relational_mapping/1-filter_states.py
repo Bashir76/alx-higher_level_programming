@@ -1,8 +1,13 @@
 #!/usr/bin/python3
-# -*- coding: UTF-8 -*-.
+# -*- coding: utf-8 -*-
 """
    List all the states start with N in Database
+
 """
+import MySQLdb
+import sys
+
+
   if __name__ == '__main__':
   args = sys.argv
   if len(args) != 4:
