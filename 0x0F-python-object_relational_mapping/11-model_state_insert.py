@@ -24,4 +24,4 @@ if __name__ == '__main__':
     session = Session()
     new_state = session.query(State).filter(State.id == 2).one()
     new_state.name = 'New Mexico'
-    session.commit()[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B
+    session.commit()
