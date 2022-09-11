@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-script that lists all State objects, and corresponding City objects
+script that lists all State objects
 @: 
 """
 from relationship_state import Base, State
