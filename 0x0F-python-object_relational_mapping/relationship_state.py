@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-A new table into de data base for state representation
+A new table into de database
+
 @author: Amir Kano5 
 """
 import sqlalchemy
