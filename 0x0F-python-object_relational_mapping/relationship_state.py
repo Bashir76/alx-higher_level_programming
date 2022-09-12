@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 A new table into de data base for state representation
-@AmirKano5:
+@author: Amir Kano5 
 """
 import sqlalchemy
 from sqlalchemy import Column, Integer, String
