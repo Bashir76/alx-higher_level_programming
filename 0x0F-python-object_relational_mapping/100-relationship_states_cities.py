@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Improve the files model_city.py
-@:
+@author: Amir Kano5
 """
 from relationship_state import Base, State
 from relationship_city import City
