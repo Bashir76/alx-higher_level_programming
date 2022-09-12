@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-Script that lists all City objects from the database hbtn_0e_101_usa
-@AmirKano5: 
+Lists all City objects from the database
+@author: Amir Kano5
 """
 from relationship_state import Base, State
 from relationship_city import City
