@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-# -*- coding: utf-8 -*-
 """
 - Python script that takes in a URL
 - author: Bashir AmirKano 
