@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 - Python script that takes in a URL
-@author: Bashir AmirKano 
+- author: Bashir AmirKano 
 """
 from urllib.request import urlopen
 from urllib.error import HTTPError
