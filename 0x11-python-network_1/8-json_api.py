@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""Python script that takes in a letter 
+"""Python script that takes in a letter
+ 
 - and sends a POST request to
-@author: Bashir AmirKano 
 """
 import sys
 import requests
