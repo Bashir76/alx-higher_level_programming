@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-# -*- coding: utf-8 -*-
-"""
-Python script that takes in a letter and sends a POST request to
+"""Python script that takes in a letter 
+- and sends a POST request to
 @author: Bashir AmirKano 
 """
 import sys
