@@ -1,31 +1,27 @@
 #!/usr/bin/python3
 """
-Improve the files model_city.py
-@author: Amir Kano5
+Creates the State "California" with the City "San Francisco" from a DB
 """
+import sys
 from relationship_state import Base, State
 from relationship_city import City
-from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
-import sys
+from sqlalchemy.orm import sessionmaker
 
 
 if __name__ == '__main__':
-    args = sys.argv
-    if len(args) != 4:
-        print("Usage: {} username password database_name".format(args[0]))
-        exit(1)
-    username = args[1]
-    password = args[2]
-    data = args[3]
-    engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'
-                           .format(username, password, data))
-    # create custom session object class from database engine
+    engine = create_engine('mysql+mysqldb://{}:{}@localhost:3306/{}'.
+                           format(sys.argv[1], sys.argv[2], sys.argv[3]),
+                           pool_pre_ping=True)
+    Base.metadata.create_all(engine)
+
     Session = sessionmaker(bind=engine)
-    # create instance of new custom session class
     session = Session()
-    california = State(name="California")
-    california.cities = [City(name="San Francisco")]
-    session.add(california)
+
+    newState = State(name='California')
+    newCity = City(name='San Francisco')
+    newState.cities.append(newCity)
+
+    session.add(newState)
+    session.add(newCity)
     session.commit()
-    session.close()
